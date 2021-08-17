@@ -5,6 +5,12 @@ const button = document.querySelector('#btn');
 const message = document.querySelector('#error-msg');
 const noOfNote = document.querySelectorAll(".notes");
 
+const hideButton = document.querySelector("#hiding");
+
+//Hiding from the button
+// hideButton.addEventListener('click', function(){
+//     cashGiven.style.visibility = "hidden";
+// })
 
 const availableNote = [2000,500,100,20,10,5,1];
 button.addEventListener('click', function validateFunction(){

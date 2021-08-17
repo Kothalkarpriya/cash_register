@@ -30,7 +30,7 @@ body{
     width: 80%;
     max-width: 258px;;
 }
-#btn{
+.btn{
     border: none;
     background-color:blanchedalmond;
     padding: 1rem 1rem;
