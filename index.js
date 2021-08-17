@@ -12,7 +12,7 @@ const noOfNote = document.querySelectorAll(".notes");
 //     cashGiven.style.visibility = "hidden";
 // })
 
-const availableNote = [2000,500,100,20,10,5,1];
+const availableNote = [2000,500,100,50,20,10,5,1];
 button.addEventListener('click', function validateFunction(){
     msgHide();
     // First checking wherther the bill is grater than zero
