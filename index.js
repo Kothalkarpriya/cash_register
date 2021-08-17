@@ -5,7 +5,7 @@ const button = document.querySelector('#btn');
 const message = document.querySelector('#error-msg');
 const noOfNote = document.querySelectorAll(".notes");
 
-const hideButton = document.querySelector("#hiding");
+// const hideButton = document.querySelector("#hiding");
 
 //Hiding from the button
 // hideButton.addEventListener('click', function(){
@@ -25,6 +25,7 @@ button.addEventListener('click', function validateFunction(){
 
         }else{
             //bill amount is greater than cash
+            console.log('wront input');
             errorMsgFun('Invalid Input');
         }
     }else{
@@ -49,6 +50,7 @@ button.addEventListener('click', function validateFunction(){
 //10 % 10 => 0
 function calculateFun(returnAmount){
 
+    console.log('entered in to calculate');
     for(let i = 0 ; i < availableNote.length; i++){
         const numberOfNodes = Math.trunc(
             returnAmount / availableNote[i]

@@ -1,38 +1,83 @@
-body{
-    margin: 0;
+:root {
+    --primary-color: #A3E635;
+    /* --background:#FEFCE8; */
+}
+
+* {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 8px; */
+    padding: 0;
+    /* margin: 0; */
+    background-color: var(--background);
+    min-width: 100vw;
     /* text-align: center; */
     /* max-width: 600vh; */
     /* width: 100; */
 }
-.container{
-    display: flex;
-    border-radius: 0.5rem;
+
+nav {
+    font-size: larger;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    width: 100%;
     text-align: center;
-    margin: 4rem auto 7rem;
 }
-.paragraph{
+
+div {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    /* color: var(--primary-color); */
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.container {
+    /* display: flex; */
+    /* border-radius: 0.5rem; */
+    text-align: center;
+    /* margin: 4rem auto 7rem; */
+}
+
+.paragraph {
     font-size: larger;
     margin: 1rem;
 }
-.labelfor{
+
+.labelfor {
     display: block;
     font-size: large;
     font-weight: 600;
 }
-.input{
+
+.input {
     font-size: 14px;
     /* outline: rgb(168, 23, 23); */
     padding: 1rem;
     margin: 1rem;
-    border: 2px solid black;
+    border: 2px solid var(--primary-color);
     border-radius: 0.5rem;
     width: 80%;
-    max-width: 258px;;
+    max-width: 258px;
+    text-align: center;
 }
-.btn{
+
+.btn {
     border: none;
-    background-color:blanchedalmond;
+    background-color: var(--primary-color);
     padding: 1rem 1rem;
     border-radius: 0.5rem;
     font-size: larger;
@@ -40,16 +85,55 @@ body{
     outline: #fff;
     margin: auto;
     display: block;
+    font-weight: bold;
+    font-size: large;
 }
-.tableStyle{
-    width: 100%;
+
+#error-msg {
+    font-weight: bold;
+    font-size: large;
+    padding: 1rem;
+}
+
+.tableStyle {
+    width: 50%;
     text-align: justify;
     border-collapse: collapse;
     margin: auto;
 }
-table , caption{
-    font-size: larger;
+
+table,
+td,
+th,
+tr {
+    border: 1px solid var(--primary-color);
 }
-table,tr,th,td{
-    border: 1px solid black;
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    font-size: large;
+}
+
+caption {
+    display: table-caption;
+    font-size: larger;
+    padding: 1rem;
+}
+footer{
+    padding: 2rem;
+    font-size: medium;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
 }
