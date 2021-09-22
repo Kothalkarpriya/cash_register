@@ -76,8 +76,8 @@ main{
 }
 
 .tableStyle {
-    width: 50%;
-    text-align: justify;
+    width: 80%;
+    text-align: center;
     border-collapse: collapse;
     margin: auto;
 }
