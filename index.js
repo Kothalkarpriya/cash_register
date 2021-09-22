@@ -5,7 +5,7 @@ var output = document.querySelector('#output');
 var message = document.querySelector('#error-msg');
 var noOfNote = document.querySelectorAll(".notes");
 
-const availableNote = [2000,500,100,20,10,5,1];
+const availableNote = [2000,500,100,50,20,10,5,1];
 button.addEventListener('click', function validateFunction(){
     // First checking wherther the bill is grater than zero
     var cashgiven = Number(cashGiven.value);
