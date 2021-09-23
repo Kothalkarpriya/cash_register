@@ -73,8 +73,16 @@ main{
     font-weight: bold;
     font-size: large;
     padding: 1rem;
+    /* width: 70%; */
+    margin: 1rem;
 }
 
+#output{
+    font-size: larger;
+    padding-top: 1rem;
+    /* padding: 2rem; */
+    font-weight: bolder;
+}
 .tableStyle {
     width: 80%;
     text-align: center;
@@ -108,6 +116,7 @@ caption {
     display: table-caption;
     font-size: larger;
     padding: 1rem;
+    font-weight: bold;
 }
 footer{
     padding: 2rem;
