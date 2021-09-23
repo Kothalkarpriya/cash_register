@@ -6,7 +6,14 @@ var message = document.querySelector('#error-msg');
 var noOfNote = document.querySelectorAll(".notes");
 
 const availableNote = [2000, 500, 100, 50, 20, 10, 5, 1];
-button.addEventListener('click', function validateFunction() {
+button.addEventListener('click', ()=>{
+    if(cashGiven.value==''||billAmount.value == ''){
+        output.innerText = 'Please insert both the values';
+    }else{
+        validateFunction();
+    }
+});
+function validateFunction() {
     // First checking wherther the bill is grater than zero
     msgHide();
     var cashgiven = Number(cashGiven.value);
@@ -27,7 +34,7 @@ button.addEventListener('click', function validateFunction() {
     // bill is less  than small
     errorMsgFun('Do you want to wash plates?');
     }
-});
+}
 // Calculate function: 
 // 1. substracting cash value with bill amount e.g.:
 //cash=2000 and bill=50 output = 2000-50 => 1950

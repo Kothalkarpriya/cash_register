@@ -96,6 +96,9 @@ th,
 tr {
     border: 1px solid var(--primary-color);
 }
+td{
+    padding: 1rem;
+}
 
 tbody {
     display: table-row-group;
